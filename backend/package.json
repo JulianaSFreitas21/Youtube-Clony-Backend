@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/server.js",
+    "start": "node dist/server.js",
     "dev": "nodemon ./src/server.js",
-    "build": "babel ./src --out-dir dist"
+    "build": "babel src --out-dir dist"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,9 @@
     "mysql2": "^3.15.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
     "nodemon": "^3.1.10"
   }
 }
